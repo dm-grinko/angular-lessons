@@ -1,3 +1,6 @@
-<p *ngIf="isVisible">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quas modi suscipit ab labore hic quos ipsa ad a fugit, dolorem, sint asperiores officiis, sed eligendi fuga nostrum. Voluptatibus, animi?
-</p>
+<ul>
+    <li *ngFor="let product of products">
+        <img [src]="product.img" alt="">
+        <h2>{{product.name}}</h2>
+    </li>
+</ul>
